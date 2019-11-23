@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">AppReveal</string>
+    <string name="app_next">启动第二个Activity</string>
+    <string name="app_first">第一个Activity</string>
+    <string name="app_second">第二个Activity</string>
+    <string name="app_reveal">揭露背景</string>
+    <string name="app_reveal_r">收起背景</string>
+</resources>
