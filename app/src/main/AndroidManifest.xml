@@ -11,7 +11,7 @@
         android:theme="@style/trans_no_anim">
         <activity
             android:name=".MainActivity"
-            android:launchMode="singleTop"> <!-- 只要 Activity 的 lanuchMode 不是 standard 的，每次点击桌面启动图标都会触发栈顶的 onNewIntent 方法 -->
+            android:launchMode="singleTop"> <!-- 只要 Activity 的 lanuchMode 不是 standard 的，当此 Activity 处于自己所在任务栈的栈顶时，每次点击桌面中本应用的启动图标时都会触发此 Activity 的 onNewIntent 方法 -->
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

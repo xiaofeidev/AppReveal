@@ -7,6 +7,7 @@
     android:layout_height="match_parent"
     android:background="@android:color/white"
     tools:context=".SecondActivity">
+    <!--我们要对这个蓝色背景 View 做揭露和反揭露动画-->
     <View
         android:id="@+id/viewBg"
         android:layout_width="0dp"
@@ -29,6 +30,7 @@
         android:text="@string/app_second"
         android:textSize="30sp"/>
 
+    <!--点击这个按钮开始揭露，反揭露动画-->
     <Button
         android:id="@+id/btnReveal"
         android:layout_width="wrap_content"

@@ -15,6 +15,7 @@ class MainActivity : BaseActivity() {
             val intent = Intent(this, SecondActivity::class.java)
             val location = IntArray(2)
             view.getLocationInWindow(location)
+            //把点击按钮的中心位置坐标传过去作为 SecondActivity 的揭露动画圆心
             intent.putExtra(CLICK_X, location[0] + view.width/2)
             intent.putExtra(CLICK_Y, location[1] + view.height/2)
             startActivity(intent)
