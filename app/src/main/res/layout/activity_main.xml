@@ -14,7 +14,8 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintVertical_bias="0.1"
-        android:text="@string/app_first"/>
+        android:text="@string/app_first"
+        android:textSize="30sp"/>
 
     <Button
         android:id="@+id/btnNext"

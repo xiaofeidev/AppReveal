@@ -11,8 +11,12 @@ class MainActivity : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        btnNext.setOnClickListener {
+        btnNext.setOnClickListener {view ->
             val intent = Intent(this, SecondActivity::class.java)
+            val location = IntArray(2)
+            view.getLocationInWindow(location)
+            intent.putExtra(CLICK_X, location[0] + view.width/2)
+            intent.putExtra(CLICK_Y, location[1] + view.height/2)
             startActivity(intent)
         }
     }
